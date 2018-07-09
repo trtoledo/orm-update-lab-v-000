@@ -51,7 +51,6 @@ class Student
     student = Song.new(name, grade)
     student.save
     student
-
   end
 
   def self.find_by_name(name)
