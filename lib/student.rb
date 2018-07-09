@@ -47,7 +47,10 @@ class Student
     DB[:conn].execute(sql, self.name, self.grade, self.name)
   end
 
-  def self.create
+  def self.create(name:, grade:)
+    student = Song.new(name, grade)
+    student.save
+    student
 
   end
 
